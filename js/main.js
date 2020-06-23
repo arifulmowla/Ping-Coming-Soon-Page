@@ -5,7 +5,7 @@ function checkMail() {
   if (mail != "") {
     validateEmail(mail.value);
   } else {
-    alert("Please input you mail first.");
+    alert("Whoops! It looks like you forgot to add your email");
   }
 }
 
@@ -13,7 +13,7 @@ function validateEmail(emailField) {
   var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
   if (reg.test(emailField) == false) {
-    console.log("Invalid Email Address " + emailField);
+    console.log("Please provide a valid email address");
     return false;
   }
   alert("Subscribed successfully!");
